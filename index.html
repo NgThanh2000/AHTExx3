@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDY PLUS</title>
+<!-- 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sytle.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="header-top">       
+        <div class="container top--in">
+            <i class="far fa-caret-square-down"></i>
+            <div class="row">  
+                
+                <div class="suppost">
+                    <div class=" in address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="text">
+                            <p>Find us</p>
+                            <span>325 admiral unit, North cost, USA</span>
+                        </div>
+                    </div>    
+                    <div class=" in email--us">
+                        <i class="fas fa-envelope"></i>
+                        <div class="text">
+                            <p>Email us</p>
+                            <span>admin@medyplus.com</span>
+                        </div>
+                    </div>   
+                    <div class=" in call--us-now">
+                        <i class="fas fa-phone"></i>
+                        <div class="text">
+                            <p>Call us now</p>
+                            <span>002 - 0100 843 1112</span>
+                        </div> 
+                    </div>
+                </div>
+                         
+                 
+                <div class=" language" >           
+                    <div class="setting-lang">
+                        <div class="current_lang">
+                            <div class="lang">
+                              <img src="image/usa.png" alt="English">
+                              <span class="lang-txt">English</span> 
+                              <span class="fa fa-chevron-down"></span>
+                            </div>
+                        </div>
+                        <div class="more_lang">
+                        
+                            <div class="lang selected" data-value='English'>
+                              <img src="image/usa.png" alt="English">
+                              <span class="lang-txt">English<span> (US)</span></span>      
+                            </div>
+                           
+                            
+                            <div class="lang" data-value='Deutsch'>
+                              <img src="image/usa.png" alt="Deutsch">
+                              <span class="lang-txt">Deutsch</span>      
+                            </div>
+                            
+                            <div class="lang" data-value='Español'>
+                              <img src="image/usa.png" alt="Espanol">
+                              <span class="lang-txt">Español</span>      
+                            </div>  
+                            
+                            
+                            <div class="lang" data-value='Français'>
+                              <img src="image/usa.png" alt="French">
+                              <span class="lang-txt">Français</span>      
+                            </div>
+                       
+                        </div>
+                    </div>                 
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <div class="header-center">       
+        <div class="container mt-3 mb-3 center-in">            
+            <div class="row">                
+                <div class="col-xs-2 col-sm-5 col-md-5 col-lg-5 row--logo" >
+                    <img src="image/logo.png" alt="">
+                </div>
+                <div class="col-xs-8 col-sm-6 col-md-6 col-lg-6 row--sreach" >
+                        <nav class="navbar navbar-expand-sm navbar-light ">
+                            <div class="nav--sreach">
+                                <form class="">
+                                    <select name="catgerory" id="" >
+                                        <option value="All Category">All Category</option>
+                                        <option value="All Category">All Category</option>
+                                        <option value="All Category">All Category</option>
+                                        <option value="All Category">All Category</option>
+                                    </select>
+                                    
+                                    <input class="form-control " type="text" placeholder="Search for product">
+                                    
+                                    <button class="btn btn-info" type="submit">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                </form>
+                            </div>                    
+                        </nav>
+                     </div>
+                     
+                <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1 cart">
+                        <div class="cart-in">
+                            <img src="image/gear.png" alt="" id="gear">
+                            <img src="image/cart.png" alt="" id="cart">
+
+                            <div class="gear-click">
+                                <img src="image/pain-gear2.jpg" alt="">
+                            </div>
+                            <div class="product">
+                                <div class="product-button-empty">
+                                    <div class="not-empty">
+                                        <img src="image/tsell3.png" alt="">
+                                        <span> Natural Factors Vitamin C <br> Blueberry Rasp</span>
+                                        <p>$30.00</p>
+                                    </div>  
+                                </div>
+                               <div class="product-button">
+                                    <button>View Cart</button>
+                                    <button>Check Out</button>
+                                </div>           
+                            </div>
+                        </div>
+                     </div>
+                </div>            
+            </div>            
+        </div>   
+
+    <div class="header-bottom">        
+        <div class="container bottom-in">            
+            <div class="row">                
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 bottom__in--text">                    
+                    <div class="dropdown-select">
+                        <div class="cross "></div>
+                        <div class="categories-tittle" >
+                            <h3>CATEGORIES</h3>
+                        </div>
+                    </div>
+                    <div class="menu-dropd">
+
+                        <ul class="dropdown-list" style="z-index: 100;">
+
+                            <li class="click-cosmetic ">
+                                <a href="#">Cosmetic</a>
+                                <i class="fas fa-plus-circle"></i>
+                            </li>
+                            <ul class="cosmetic-in ">
+                                <li><a href="#">Medicine</a></li>
+                                <li><a href="#">Nuchition</a></li>
+                                <li><a href="#">Specialty</a></li>
+                            </ul>
+
+                            <li>
+                                <a href="#">Medicine</a>
+                                <i class="fas fa-plus-circle"></i>
+                            </li>
+                            <li>
+                                <a href="#">Nuchition</a>
+                                <i class="fas fa-plus-circle"></i>
+                            </li>
+                            <li>
+                                <a href="#">Specialty</a>
+                                <i class="fas fa-plus-circle"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>   
+                <i class="fas fa-ellipsis-h"></i>             
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 bottom__in--nav ">                   
+                       <ul>
+                           <li><a href="">HOME</a> </li>
+                           <li><a href="">ABOUT</a> </li>
+                           <li><a href="">SERVICES</a> </li>
+                           <li><a href="">BLOG</a> </li>
+                            <li> <a href=""> CONTACT</a></li>
+                           <li><a href="">PAGE</a> </li>
+                         
+                       </ul>                           
+                        </div>
+                    </nav>
+                </div>                
+            </div>            
+        </div>        
+</div>
+<div class=" container-fluid slider">
+
+    <div class="slider__arrow">
+        <div class="arrow--left" id="caurosel_buton-prev"> <i class="fas fa-chevron-left"></i></div>
+        <div class="arrow--right" id="caurosel_buton-next"> <i class="fas fa-chevron-right"></i></div>
+    </div>
+    
+    <div class="slider-item  active"> 
+        <div class="slider__background">
+            <img src="image/slider1.png" alt="">
+        </div>
+
+        <div class="slider__button">
+            <h1 >Find Any 
+            <span >Medicine </span> 
+            <br> You Need!</h1>
+            <p>Free Standard Shipping Everyday</p>
+            <a href="#">Shop Now</a>
+        </div>
+    </div>
+    <div class="slider-item "> 
+        <div class="slider__background">
+            <img src="image/slider1.png" alt="">
+        </div>
+        <div class="slider__button">
+            <h1 >Find Any 
+            <span >Medicine </span> 
+            <br> You Need!</h1>
+            <p>Free Standard Shipping Everyday</p>
+            <a href="#">Shop Now</a>
+        </div>
+    </div>
+    <div class="slider-item "> 
+        <div class="slider__background">
+            <img src="image/slider1.png" alt="">
+        </div>
+        <div class="slider__button">
+            <h1 >Find Any 
+            <span >Medicine </span> 
+            <br> You Need!</h1>
+            <p>Free Standard Shipping Everyday</p>
+            <a href="#">Shop Now</a>
+        </div>
+    </div>
+
+    <div class="slider_dot">
+        <span id="dot-event" class="dots active"></span>
+        <span id="dot-event" class="dots "></span>
+        <span id="dot-event" class="dots "></span>
+    </div>
+
+</div>
+<div class="container mt-4 mb-4 fact">
+    
+    <div class="row">
+
+        <div class="col-xs-3 col-sm-6 col-md-3 col-lg-3 in__fact free">
+            <img src="image/fact1.png" alt="fact">
+            <div class="fact-item">
+                 <h6>Free Shipping</h6>
+                <p>Free shipping for all US order </p>
+            </div>
+        </div>
+
+        <div class="col-xs-3 col-sm-6 col-md-3 col-lg-3 in__fact supost">
+            <img src="image/fact2.png" alt="fact">
+            <div class="fact-item">
+                <h6>Support 24/7</h6> 
+                <p>We support 24 hours a day</p>
+           </div>
+        </div>
+
+        <div class="col-xs-3 col-sm-6 col-md-3 col-lg-3 in__fact return">
+            <img src="image/fact3.png" alt="fact">
+            <div class="fact-item">
+               <h6>30 Days Return</h6>
+                <p>You have 30 days to return  </p>
+           </div>
+        </div>
+
+        <div class="col-xs-3 col-sm-6 col-md-3 col-lg-3 in__fact payment">
+            <img src="image/fact4.png" alt="fact">
+            <div class="fact-item">
+                <h6>Secure Payments</h6>
+                <p>100% Secure & Safe </p>
+           </div>
+        </div>
+        
+    </div>
+    
+</div>
+<div class="container banner">
+    
+    <div class="row">
+        
+        <div class="col-xs-6 col-sm-7 col-md-7 col-lg-7 hotdeal">
+            <img src="image/banner1.png" alt="banner">
+            <div class="hotdeal__countdown" id="countdown">
+
+                <div class="countdown day" >
+                    <h5 id="days" >230</h5>
+                    <p >DAYS</p>
+                </div>
+
+                <div class="countdown hrs" >
+                    <h5 id="hours">24</h5>
+                    <p >HRS</p>
+                </div>
+
+                <div class="countdown mins" >
+                    <h5 id="minutes">40</h5>
+                    <p >MINS</p>
+                </div>
+
+                <div class="countdown sec" >
+                    <h5 id="seconds">60</h5>
+                    <p >SEC</p>
+                </div>
+
+            </div>
+            
+            <div class="hotdeal-text">
+                <h4 >BEAUTY & COSMETICS</h4>
+                <span>Sale up to <p>40%</p> off</span>
+            </div>
+        </div>
+        
+        
+        <div class="col-xs-6 col-sm-5 col-md-5 col-lg-5 deal">
+
+            <div class="dealin _2">
+                <img src="image/banner2.png" alt="banner">
+                <div class="dealtext">
+                    <h2>30%</h2>
+                    <h4>DISCOUNT</h4>   
+                    <span>For Dietary Supplement</span>
+                </div>
+            </div>
+
+            <div class="dealin _3">
+                <img src="image/banner3.png" alt="banner">
+                <div class="dealtext">
+                    <h4>ACCESSORIES</h4>   
+                    <span>Sale up to <p class="chuxanh">20%</p>  off</span>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    
+</div>
+<div class="container topselling mt-5">
+    
+    <div class="row">       
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 topselling-title">
+            <div class="title-text">
+                <h2>TOP SELLING</h2>               
+                <p class="chuan">PRODUCTS</p>                
+            </div>
+
+            <div class="title-arrow">
+                <div class="arrow_img arrowleft">
+                    <img src="image/arrowleft.png" alt="" id="arrow-hidden-img" class="arrowleftblue">
+                    <img src="image/arrowleft - Copy.png" alt="" id="arrow-unset-img" class="a1">
+                </div>
+                <div class="arrow_img arrowright">
+                    <img src="image/arowright.png" alt="" id="arrow-hidden-img" class="arrowrightblue">
+                    <img src="image/arowright - Copy.png" alt="" id="arrow-unset-img"> 
+                </div>
+            </div>
+        </div>      
+    </div>
+    <div class="row topselling-position">       
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-5 topselling-item  active">
+            <div class="item item-1">
+                <img src="image/tsell1.png" alt="topselling">
+                <span>Nature's Bounty Biotin <br> 10000 MCG</span>
+                 <p>$30.00</p>
+                 <p id="addcart">ADD CART</p> 
+            </div>
+            <div class="item item-2">
+                <img src="image/tsell2.png" alt="topselling">
+               <span> Best Colon Detox Formula <br> Advanced Colon</span>
+               <br>
+               <div class="ngach">
+                   <del>$35.00</del>
+                    <p>$30.00</p>
+                </div>   
+                <p id="addcart">ADD CART</p>          
+            </div>
+            <div class="item item-3">
+                <img src="image/tsell3.png" alt="topselling">
+               <span> Natural Factors Vitamin C <br> Blueberry Rasp</span>
+                <p>$30.00</p>
+                <p id="addcart">ADD CART</p> 
+            </div>
+            <div class="item item-4">
+                <img src="image/tsell4.png" alt="topselling">
+               <span> Jarrow Formulas <br> Methylcobalamin</span>
+                <p>$30.00</p>
+                <p id="addcart">ADD CART</p> 
+            </div>
+            <div class="item item-5">
+                <img src="image/tsell5.png" alt="topselling">
+               <span>Nature's Bounty Biotin <br> 10000 MCG ... </span> 
+                <p>$30.00</p>
+                <p id="addcart">ADD CART</p> 
+            </div>
+            <div class="item item-6">
+                <img src="image/tsell6.png" alt="topselling">
+                <span>Best Colon Detox Formula <br> Advanced Colon... </span>  
+                <p>$30.00</p>
+                <p id="addcart">ADD CART</p> 
+            </div>
+            <div class="item item-7">
+                <img src="image/tsell7.png" alt="topselling">
+                <span> Natural Factors Vitamin C <br> Blueberry Rasp</span>
+                <p>$30.00</p>
+                <p id="addcart">ADD CART</p> 
+            </div>
+            <div class="item item-8">
+                <img src="image/tsell8.png" alt="topselling">
+                <span> Jarrow Formulas <br> Methylcobalamin</span>
+                <p>$30.00</p>
+                <p id="addcart">ADD CART</p> 
+            </div>
+        </div>   
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-5 topselling-item ">
+            <div class="item item-1">
+                <img src="image/tsell1.png" alt="topselling">
+                <span>Nature's Bounty Biotin <br> 10000 MCG</span>
+                 <p>$30.00</p>
+                 <p id="addcart">ADD CART</p> 
+            </div>
+            <div class="item item-2">
+                <img src="image/tsell2.png" alt="topselling">
+               <span> Best Colon Detox Formula <br> Advanced Colon</span>
+               <br>
+               <div class="ngach">
+                   <del>$35.00</del>
+                    <p>$30.00</p>
+                </div>   
+                <p id="addcart">ADD CART</p>          
+            </div>
+            <div class="item item-3">
+                <img src="image/tsell3.png" alt="topselling">
+               <span> Natural Factors Vitamin C <br> Blueberry Rasp</span>
+                <p>$30.00</p>
+                <p id="addcart">ADD CART</p> 
+            </div>
+            <div class="item item-4">
+                <img src="image/tsell4.png" alt="topselling">
+               <span> Jarrow Formulas <br> Methylcobalamin</span>
+                <p>$30.00</p>
+                <p id="addcart">ADD CART</p> 
+            </div>
+            <div class="item item-5">
+                <img src="image/tsell5.png" alt="topselling">
+               <span>Nature's Bounty Biotin <br> 10000 MCG ... </span> 
+                <p>$30.00</p>
+                <p id="addcart">ADD CART</p> 
+            </div>
+            <div class="item item-6">
+                <img src="image/tsell6.png" alt="topselling">
+                <span>Best Colon Detox Formula <br> Advanced Colon... </span>  
+                <p>$30.00</p>
+                <p id="addcart">ADD CART</p> 
+            </div>
+            <div class="item item-7">
+                <img src="image/tsell7.png" alt="topselling">
+                <span> Natural Factors Vitamin C <br> Blueberry Rasp</span>
+                <p>$30.00</p>
+                <p id="addcart">ADD CART</p> 
+            </div>
+            <div class="item item-8">
+                <img src="image/tsell8.png" alt="topselling">
+                <span> Jarrow Formulas <br> Methylcobalamin</span>
+                <p>$30.00</p>
+                <p id="addcart">ADD CART</p> 
+            </div>
+        </div>   
+    </div> 
+</div>
+<div class="new">    
+    <div class="container  new_in">      
+        <div class="row">        
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 new_in-title">             
+                    <h2>LATEST NEWS</h2>
+                    <p class="chuan">HOT NEWS</p>               
+            </div>            
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 new_in-item">
+                <div class="newitem new1">
+                    <img src="image/new1.png" alt="new">
+                    <div class="newitem-text">
+                        <h5>Probiotics may help battle antibiotic
+                            resistance Probiotics may help</h5>
+                        <span>14 June 2018 by <p class="chuxanh">Admin</p> </span>
+                    </div>
+                </div>
+                <div class="newitem new1">
+                    <img src="image/new2.png" alt="new">
+                    <div class="newitem-text">
+                        <h5>Study overturns what we know about kidney stones
+                            </h5>
+                        <span>14 June 2018 by <p class="chuxanh">Admin</p> </span>
+                    </div>
+                </div>
+                <div class="newitem new1">
+                    <img src="image/new3.png" alt="new">
+                    <div class="newitem-text">
+                        <h5>Hair loss: Scientists test wearable regrowth device
+                        </h5>
+                        <span>14 June 2018 by <p class="chuxanh">Admin</p> </span>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>    
+</div>
+<div class="newletter">
+    <div class="container newletter_in">
+        <div class="newletter_in-text">
+            <h4>Keep Updated & Get Unlimited Discount</h4>
+            <p>Sign up for our newsletter to receive updates and exclusive offers</p>
+            <div class="newletter_in-form"> 
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Enter your email address here">
+                    <button type="submit">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>    
+</div>
+<div class="container brand">
+    
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-5 mb-5 brand_in">
+            <img src="image/brand1.png" alt="">
+            <img src="image/brand2.png" alt="">
+            <img src="image/brand3.png" alt="">
+            <img src="image/brand4.png" alt="">
+            <img src="image/brand5.png" alt="">
+        </div>
+    
+</div>
+<div class="footer">
+    <div class="footer_background">
+         <div class="container footer_in">             
+             <div class="row">                 
+                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer_in-wapper">            
+                        <div class="wapper_contact">
+                            <h5>CONTACT US</h5>
+                            <div class="wapper_contact-content">
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>Lorem Ipsum has been the indus <br> try's standard </p>
+                                </a>
+    
+                                <a href="#">
+                                    <i class="far fa-envelope"></i></i>
+                                    <p>Contact@medic.com</p>
+                                </a>
+    
+                                <a href="#">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <p>+84 (1) 234 567 891 </p>
+                                </a>
+                            </div>
+                            <div class="wapper_contact-social">
+                               <a href="#"><i class="fab fa-facebook-f"></i></a> 
+                               <a href="#"><i class="fab fa-twitter"></i></a> 
+                               <a href="#"><i class="fab fa-google-plus-g"></i></a> 
+                               <a href="#"><i class="fab fa-instagram"></i></a> 
+                            </div>
+                        </div>
+    
+                        <div class="wapper3same company">
+                            <h5>COMPANY</h5>
+                            <ul>
+                            <a href="#"><li>About Us</li></a> 
+                            <a href="#"><li>Team Member</li></a> 
+                            <a href="#"><li>Carrer</li></a> 
+                            <a href="#"> <li>Contact</li></a>
+                            <a href="#"><li>Affilate</li></a> 
+                            </ul>
+                        </div>
+    
+                        <div class="wapper3same categories">
+                            <h5>CATEGORIES</h5>
+                            <ul>
+                                <a href="#"><li>Home Medicine</li></a>
+                                <a href="#"><li>Baby & Child</li></a>
+                                <a href="#"><li>Diet & Nutrition</li></a>
+                                <a href="#"><li>Beauty</li></a>
+                                <a href="#"><li>Fitness & Vitamins</li></a>
+                            </ul>
+                        </div>
+    
+                        <div class="wapper3same quicklinks">
+                            <h5>QUICK LINKS</h5>
+                            <ul>
+                                <a href="#"><li> My Account</li></a>
+                                <a href="#"><li>Store Location</li></a>
+                                <a href="#"><li>Orders Tracking</li></a>
+                                <a href="#"><li>FAQs</li></a>
+                        </div>
+                 </div>           
+             </div> 
+        </div> 
+    </div>
+    <div class="container footercopyright">
+           <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footercopyright_in">
+               
+                    <span >@2018 Design by <p class="chuxanh">Creative Wp</p> . All Rights Reserved. </span>
+                
+                <img src="image/footer-payment.png" alt="payment">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+    <script src="js/jquery-3.6.0.min.js"></script> 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</html>
